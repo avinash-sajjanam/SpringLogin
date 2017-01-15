@@ -39,12 +39,14 @@ public class LoginController extends HttpServlet {
 	Login login= (Login) context.getBean("login");
 		
 		if(Pass.equals("admin")){
+			response.getWriter().write(login.getSuccess());
 			System.out.println(login.getSuccess());
-			response.sendRedirect("Success.jsp");
+			//response.sendRedirect("Success.jsp");
 		}
 		else{
+			response.getWriter().write(login.getDenied());
 			System.out.println(login.getDenied());	
-			response.sendRedirect("Login.jsp");
+			//response.sendRedirect("Login.jsp");
 			
 		}
 	}
