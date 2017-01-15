@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!-- <bean/> definitions here -->
+<bean id="login" class="com.main.Login">
+    <property name="success" value="Login success, Welcome user"></property>
+        <property name="denied" value="Login error try again"></property>
+    
+   
+</bean>
+</beans>
