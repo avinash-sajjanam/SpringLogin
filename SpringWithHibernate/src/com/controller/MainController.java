@@ -55,7 +55,6 @@ public class MainController {
 		user.setPassword(password);
 		
 		userinfo.checkUser(user);
-		response.sendRedirect("welcome.jsp");
 	}catch(Exception e){
 		e.printStackTrace();
 	}

@@ -43,8 +43,7 @@ public class UserInfoImpl implements UserInfo {
 			}
 			if (userObjs.size() != 0) {
 				
-				System.out.println("success");
-				
+				System.out.println("login success");
 
 			} else {
 				System.out.println("invalid credentials");
