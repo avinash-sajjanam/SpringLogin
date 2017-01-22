@@ -55,10 +55,10 @@ public class MainController {
 		user.setPassword(password);
 		
 		userinfo.checkUser(user);
+		
 	}catch(Exception e){
 		e.printStackTrace();
-	}
-	
+	}	
 
 	
 	

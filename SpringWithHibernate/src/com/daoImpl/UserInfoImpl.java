@@ -13,6 +13,7 @@ import com.model.User;
 
 public class UserInfoImpl implements UserInfo {
 
+
 	@Override
 	public void save(User user) {
 		Session session = HibernateConfig.getSessionFactory();
@@ -29,7 +30,8 @@ public class UserInfoImpl implements UserInfo {
 
 	@Override
 	public void checkUser(User user) {
-
+//		@SuppressWarnings("unused")
+//		public boolean b=false;
 		Session session = HibernateConfig.getSessionFactory();
 		user.getUsername();
 		user.getPassword();
@@ -44,6 +46,8 @@ public class UserInfoImpl implements UserInfo {
 			if (userObjs.size() != 0) {
 				
 				System.out.println("login success");
+				
+		
 
 			} else {
 				System.out.println("invalid credentials");
